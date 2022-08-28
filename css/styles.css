@@ -439,3 +439,7 @@ img {
 .contacts-icon{
 fill: currentColor;
 }
+.contacts-icon:hover,
+.contacts-icon:focus{
+  fill: var(--accent-color);
+}
