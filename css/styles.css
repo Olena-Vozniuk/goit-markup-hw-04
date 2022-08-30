@@ -350,26 +350,22 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: var(--light-text-color);
+  color: var(--logo-basic-color);
   height: 100%;
   width: 100%;
 }
-.social-list-icon{
+.social-icon{
   width: 20px;
   height: 20px;
-  fill: var(--logo-basic-color);
+  fill: currentColor;
 }
 
 .social-list-link:hover,
 .social-list-link:focus{
   color: var(--accent-color);
-  border-color: var(--accent-color);
   }
 
- .social-list-icon:hover,
- .social-list-icon:focus{
-fill: var(--light-text-color);
-}
+
 
 
 /* section footer */
