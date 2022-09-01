@@ -17,6 +17,7 @@ html {
   --btn-focus-hover: #188ce8;
   --border-color: #eeee;
   --logo-basic-color: #afb1b8;
+  --footer-social-bg-color: rgba(255, 255, 255, 0.1);
 }
 body {
   margin: 0;
@@ -257,9 +258,6 @@ border-bottom: 1px solid var(--border-color);
   margin-right: 30px;
 }
 
-/* .feauters-list .item {
-   gap: 30px;
-  } */
 .feauters-list .item {
   width: 270px;
 }
@@ -299,6 +297,10 @@ img {
 }
 .team-photos {
   background-color: var(--light-text-color);
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
 }
 .worker-name {
   color: var(--title-text-color);
@@ -317,19 +319,19 @@ img {
 }
 
 .ihor {
-  padding: 30px 71px 30px 70px;
+  padding: 30px;
   text-align: center;
 }
 .olha {
-  padding: 30px 61px 30px 62px;
+  padding: 30px;
   text-align: center;
 }
 .mykola {
-  padding: 30px 70px 30px 70px;
+  padding: 30px;
   text-align: center;
 }
 .myhailo {
-  padding: 30px 62px 30px 63px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -338,6 +340,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .social-list-item{
@@ -351,24 +354,20 @@ img {
   justify-content: center;
   border-radius: 50%;
   color: var(--logo-basic-color);
+  fill: currentColor;
   height: 100%;
   width: 100%;
 }
 .social-icon{
   width: 20px;
   height: 20px;
-  fill: var(--logo-basic-color);
 }
 
 .social-list-link:hover,
 .social-list-link:focus{
  background-color: var(--accent-color);
+ color: var(--light-text-color);
   }
-
-.social-list-link:focus .social-icon,
-.social-list-link:hover .social-icon{
-  fill: var(--light-text-color);
-}
 
 /* section customers */
 
@@ -378,18 +377,49 @@ img {
 }
 
 .customers-item{
+  width: 170px;
+  height: 92px;
+}
+
+.customers-logo{
   width: 106px;
   height: 60px;
 }
+
+.customers-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--logo-basic-color) ;
+  border-radius: 4px;
+  color: var(--logo-basic-color);
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+
+.customers-link:hover,
+.customers-link:focus{
+ color: var(--accent-color);
+ border-color: var(--accent-color);
+}
+
 
 /* section footer */
 
 .site-footer {
   background-color: var(--dark-bg-color);
+
 }
 .footer-links a {
   font-style: normal;
 }
+
+.container.footer{
+display: flex;
+align-items: baseline;
+}
+
 
 .footer-list .item:not(:last-child) {
   margin-bottom: 9px;
@@ -421,6 +451,29 @@ img {
   margin-bottom: 20px;
 }
 
+.footer-social{
+  display: flex;
+  width: 206px;
+}
+
+.footer-title{
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.14;
+}
+
+.social-list-link.footer{
+  fill: var(--light-text-color);
+  background-color: var(--footer-social-bg-color) 
+} 
+
+.social-list-link.footer:hover,
+.social-list-link.footer:focus{
+ background-color: var(--accent-color);
+ }
+
 /* portfolio */
 
 .portfolio.not-link{
@@ -430,7 +483,7 @@ img {
 .portfolio-btns {
   display: flex;
   justify-content: center;
-  margin-bottom: 46px;
+  margin-bottom: 50px;
 }
 
 .btn-portfolio {
@@ -449,7 +502,6 @@ img {
 
 .portfolio-btns .item:not(:last-child) {
   margin-right: 8px;
-  
 }
 
 .btn-portfolio:hover {
@@ -479,14 +531,14 @@ img {
 
 .portfolio-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  gap: 30px;
 }
 
-.portfolio-list .item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+.portfolio-link:hover,
+.portfolio-link:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .border {
