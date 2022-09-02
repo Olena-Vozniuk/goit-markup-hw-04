@@ -45,8 +45,7 @@ ul {
 }
 .not-link {
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  display: block;
 }
 
 /* start */
@@ -452,7 +451,7 @@ align-items: baseline;
 }
 
 .footer-social{
-  display: flex;
+  margin-left: 70px;
   width: 206px;
 }
 
@@ -534,6 +533,10 @@ align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio-list .item{
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-link:hover,
